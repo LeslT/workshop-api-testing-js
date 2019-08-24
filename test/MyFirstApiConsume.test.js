@@ -39,7 +39,7 @@ describe('First Api Tests', () => {
       age: '25',
       city: 'nn'
     }
-    const response = await agent.put('https://httpbin.org/put').query(body);
+    const response = await agent.put('https://httpbin.org/put').send(body);
 
     //console.log(response);
     expect(response.status).to.equal(statusCode.OK);
@@ -62,7 +62,7 @@ describe('First Api Tests', () => {
       age: '26',
 
     }
-    const response = await agent.patch('https://httpbin.org/patch').query(body);
+    const response = await agent.patch('https://httpbin.org/patch').send(body);
 
     //console.log(response);
     expect(response.status).to.equal(statusCode.OK);
