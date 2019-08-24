@@ -30,6 +30,7 @@ describe('First Api Tests', () => {
     const response = await agent.head('https://httpbin.org/headers');
 
     expect(response.status).to.equal(statusCode.OK);
+    expect(response.body).to.be.empty;
   });
 
   it('Consume PUT Service', async () => {
