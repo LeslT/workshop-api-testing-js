@@ -43,7 +43,7 @@ describe('First Api Tests', () => {
 
     //console.log(response);
     expect(response.status).to.equal(statusCode.OK);
-    expect(response.body.args).to.eql(body);
+    expect(response.body.json).to.eql(body);
 
   });
 
@@ -66,7 +66,7 @@ describe('First Api Tests', () => {
 
     //console.log(response);
     expect(response.status).to.equal(statusCode.OK);
-    expect(response.body.args).to.eql(body);
+    expect(response.body.json).to.eql(body);
 
   });
 
